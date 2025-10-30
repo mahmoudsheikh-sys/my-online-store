@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسوق عبر الإنترنت - سوريا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="لوغو المتجر" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="register.html">تسجيل متجر</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>مرحبًا بكم في متجرنا الإلكتروني</h1>
+
+        <section class="categories">
+            <h2>الأقسام</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <img src="real-estate.jpg" alt="العقارات" />
+                    <h3>العقارات</h3>
+                </div>
+                <div class="category-item">
+                    <img src="clothes.jpg" alt="الملابس" />
+                    <h3>الملابس</h3>
+                </div>
+                <div class="category-item">
+                    <img src="cars.jpg" alt="السيارات" />
+                    <h3>السيارات</h3>
+                </div>
+                <div class="category-item">
+                    <img src="motors.jpg" alt="الميتورات" />
+                    <h3>الميتورات</h3>
+                </div>
+                <div class="category-item">
+                    <img src="cleaning.jpg" alt="منظفات المنزل" />
+                    <h3>منظفات المنزل</h3>
+                </div>
+                <div class="category-item">
+                    <img src="cigarettes.jpg" alt="الدخان" />
+                    <h3>الدخان</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-products">
+            <h2>أكثر المنتجات مبيعًا</h2>
+            <div class="product-list">
+                <!-- هنا يمكن عرض منتجات من أكثر المبيعات -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 متجر تسوق سوريا. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - متجر سوريا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h1>تسجيل الدخول</h1>
+            <form id="login-form">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required>
+
+                <button type="submit">تسجيل الدخول</button>
+            </form>
+
+            <div class="options">
+                <p>ليس لديك حساب؟ <a href="register.html">سجل الآن</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل متجر - متجر سوريا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h1>تسجيل المتجر</h1>
+            <form id="register-form">
+                <label for="store-name">اسم المتجر:</label>
+                <input type="text" id="store-name" name="store-name" placeholder="أدخل اسم المتجر" required>
+
+                <label for="store-email">البريد الإلكتروني:</label>
+                <input type="email" id="store-email" name="store-email" placeholder="أدخل البريد الإلكتروني" required>
+
+                <label for="store-password">كلمة المرور:</label>
+                <input type="password" id="store-password" name="store-password" placeholder="أدخل كلمة المرور" required>
+
+                <label for="store-phone">رقم الهاتف:</label>
+                <input type="tel" id="store-phone" name="store-phone" placeholder="أدخل رقم الهاتف" required>
+
+                <label for="store-address">عنوان المتجر:</label>
+                <input type="text" id="store-address" name="store-address" placeholder="أدخل عنوان المتجر" required>
+
+                <button type="submit">تسجيل المتجر</button>
+            </form>
+
+            <div class="options">
+                <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خيارات الدفع</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h1>اختر طريقة الدفع</h1>
+        <form id="payment-form">
+            <label for="payment-method">طريقة الدفع:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="cash">الدفع نقدًا</option>
+                <option value="mastercard">ماستر كارد</option>
+                              <option value="shamcash">شام كاش</option>
+                <option value="syrtelcash">سيريتيل كاش</option>
+                <option value="mtncash">MTN كاش</option>
+            </select>
+
+            <button type="submit">إتمام الدفع</button>
+        </form>
+    </div>
+</body>
+</html><!-- cart.html -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة المشتريات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cart-container">
+        <h1>سلة المشتريات</h1>
+        <div id="cart-items">
+            <!-- هنا سيتم عرض المنتجات المضافة للسلة -->
+        </div>
+        <button id="checkout">إتمام الدفع</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+<!-- wishlist.html -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات المفضلة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wishlist-container">
+        <h1>المنتجات المفضلة</h1>
+        <div id="wishlist-items">
+            <!-- هنا سيتم عرض المنتجات المفضلة -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
